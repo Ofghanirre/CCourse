@@ -20,7 +20,9 @@ void clist_free(CList * list, void (*free_func)(void *)) {
     CNode * node = list->head;
     while (node != NULL) {
         CNode * next = node->next;
-        free_func(node->data);
+        if (free_func != NULL) {
+            free_func(node->data);
+        }
         free(node);
         node = next;
     }
