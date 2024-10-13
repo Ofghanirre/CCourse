@@ -16,7 +16,7 @@ void clist_append(CList *list, void *data) {
     // Code here
 }
 
-int clist_remove(CList *list, const int index, void **removedData) {
+int clist_remove(CList *list, const unsigned int index, void **removedData) {
     // Code here
 }
 
@@ -24,7 +24,7 @@ int clist_removeLast(CList *list, void **removedData) {
     // Code here
 }
 
-int clist_get(const CList *list, const int index, void **returnedData) {
+int clist_get(const CList *list, const unsigned int index, void **returnedData) {
     // Code here
 }
 
