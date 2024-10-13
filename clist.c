@@ -45,9 +45,9 @@ void clist_append(CList * list, void * data) {
     list->size = list->size + 1;
 }
 
-int clist_remove(CList * list, const int index, void ** removedData) {
+int clist_remove(CList * list, const unsigned int index, void ** removedData) {
     if (list == NULL) return -1;
-    if (index < 0 || index >= list->size) return 1;
+    if (index >= list->size) return 1;
     CNode * node = list->head;
     if (index == 0) {
         list->head = node->next;
@@ -80,9 +80,9 @@ int clist_removeLast(CList * list, void ** removedData) {
 }
 
 
-int clist_get(const CList * list, const int index, void ** returnedData) {
+int clist_get(const CList * list, const unsigned int index, void ** returnedData) {
     if (list == NULL) return -1;
-    if (index < 0 || index >= list->size) return 1;
+    if (index >= list->size) return 1;
 
     CNode * node = list->head;
     for (int i = 0; i < index; i++) {

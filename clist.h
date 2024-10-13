@@ -53,14 +53,14 @@ void clist_append(CList * list, void * data);
  * @param removedData The removed element.
  * @return -1 if list is NULL, 1 if index is incorrect, else 0
  */
-int clist_remove(CList * list, int index, void ** removedData);
+int clist_remove(CList * list, unsigned int index, void ** removedData);
 
 /**
  * Removes the last element of the list and puts its data onto removedData.
  *
  * @param list
  * @param removedData The removed element.
- * @return -1 if list is NULL, 1 if index is incorrect, else 0
+ * @return -1 if list is NULL, else 0
  */
 int clist_removeLast(CList * list, void ** removedData);
 
@@ -72,7 +72,7 @@ int clist_removeLast(CList * list, void ** removedData);
  * @param returnedData The expected result.
  * @return -1 if list is NULL, 1 if index is incorrect, else 0
  */
-int clist_get(const CList * list, int index, void ** returnedData);
+int clist_get(const CList * list, unsigned int index, void ** returnedData);
 
 /**
  * Constructs a new CList containing all the elements from list that matched the given filterFunction.
