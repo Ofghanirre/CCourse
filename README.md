@@ -2,7 +2,7 @@
 
 This repo contains mini projects in C to learn the language!
 
-Visit branches to discovers projects to play with or to use =)
+Visit [branches](https://github.com/Ofghanirre/CCourse/branches) to discovers projects to play with or to use =)
 
 Here is an enumeration of the availables projects so far:
 
