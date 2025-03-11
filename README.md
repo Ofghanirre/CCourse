@@ -1,4 +1,4 @@
-﻿# Utilisation de tree_display
+# Introduction
 
 Ce module permet la visualisation d'arbre générique de type unaire, binaire ou ternaire via la génération de fichiers
 au format dot. Le module `tree_display` est responsable entièrement de l'affichage, et le projet proposent différents 
@@ -6,7 +6,12 @@ exemples présents dans le dossier `examples`.
 
 > Si vous souhaitez utiliser le module, il vous suffit de copier le module `tree_display`
 
-### Mode d'emplois:
+Ce projet peut être utiliser pour visualiser des arbres facilement, pour découvrir une approche de la programmation générique, et pour découvrir un exemple de makefile avec règles génériques et variables automatiques.
+Il peut servir d'inspiration mais il est vivement conseillé que les étudiant s'essayent à recoder par eux memes les fonctions.
+
+# Utilisation:
+
+## Mode d'emplois:
 
 Le module ne conait pas à l'avance quel type de structure va être utilisé pour représenter un arbre, il est donc de la 
 responsabilité de l'utilisateur de renseigner le module sur l'utilisation de son module.
@@ -14,6 +19,7 @@ responsabilité de l'utilisateur de renseigner le module sur l'utilisation de so
 Pour cela la structure `TreeDisplayData` est à remplir. Vous pouvez retrouver une documentation dans 
 [tree_display.h](inc/tree_display.h) et retrouver des exemples fournis dans le projet.
 
+## Exemples:
 Les différents exemples proposées sont les suivants:
 
 | nom du test                   | nom du fichier output     |
