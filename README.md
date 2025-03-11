@@ -30,43 +30,22 @@ Chaque test se présente comme tel:
 - il appel la fonction de display
 
 ## Compilation
+Ce projet fournis un makefile détaillé, pouvant être analysé et recopié pour les étudiants afin
+de comprendre l'utilisation d'un makefile.
+
 
 Le projet peut être compilé via deux méthodes:
 - CMAKE:
   - placez vous dans le dossier cmake-build-debug
     > `$ cd cmake-build-debug`
-  - 
+  - compiler avec cmake:
+    > `$ cmake ..`
 - Makefile
+    > `$ make clean & make`
 
 ## Exécution
 
-L'exécution d'un test génère un fichier .dot, utilisable avec Graphviz :
-
-./test_unary_tree
-./test_binary_tree_int
-./test_ternary_tree
-
-Vous pouvez ensuite générer un fichier image :
-
-dot -Tpng unary_tree.dot -o unary_tree.png
-dot -Tpng binary_tree_int.dot -o binary_tree_int.png
-dot -Tpng ternary_tree.dot -o ternary_tree.png
-
-### Explication des exemples
-
-1. test_unary_tree.c
-
-Affiche un arbre unaire où chaque nœud possède un unique enfant.
-
-2. test_binary_tree_int.c
-
-Affiche un arbre binaire contenant des entiers, en affichant uniquement la donnée sans label.
-
-3. test_ternary_tree.c
-
-Affiche un arbre ternaire, où chaque nœud peut avoir jusqu'à trois enfants.
-
-Ces exemples montrent comment utiliser tree_display pour différentes structures d'arbres et comment configurer les fonctions d'affichage et de récupération des enfants.
+./[C_DOT_TREE_VISUALIZER]
 
 ### Contribution
 
