@@ -49,6 +49,13 @@ typedef struct {
     void * (*get_right_child)(void *input);
 } TreeDisplayData;
 
+/**
+ * Write a dot representation onto a given file of a tree-like input, with a TreeDisplayData to handle the input
+ * @param filename the file name of the dot output
+ * @param tdp TreeDisplayData containing functions to handle the input
+ * @param input given input as a void*
+ * @return 1 if the file could not be opened, 0 else
+ */
 int writef_tree(const char *filename, const TreeDisplayData *tdp, void *input);
 
 int writef_tree_content(FILE *file, const TreeDisplayData *tdp, void *node);

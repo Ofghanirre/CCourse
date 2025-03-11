@@ -11,42 +11,49 @@ exemples présents dans le dossier `examples`.
 Le module ne conait pas à l'avance quel type de structure va être utilisé pour représenter un arbre, il est donc de la 
 responsabilité de l'utilisateur de renseigner le module sur l'utilisation de son module.
 
-Pour cela la structure `TreeDisplayData` est à remplir. Vous pouvez retrouver une documentation dans `tree_display.h` et
-retrouver des exemples fournis dans le projet.
+Pour cela la structure `TreeDisplayData` est à remplir. Vous pouvez retrouver une documentation dans 
+[tree_display.h](inc/tree_display.h) et retrouver des exemples fournis dans le projet.
 
 Les différents exemples proposées sont les suivants:
 
-| nom du test                | nom du fichier output     |
-|----------------------------|---------------------------|
-| unary_tree                 | unary_tree.dot            | 
-| binary_tree                | binary_tree.dot           | 
-| ternary_tree               | ternary_tree.dot          | 
-| binary_tree_with_only_data | binary_tree_only_data.dot | 
+| nom du test                   | nom du fichier output     |
+|-------------------------------|---------------------------|
+| unary_tree_example            | unary_tree.dot            | 
+| binary_tree_example           | binary_tree.dot           | 
+| ternary_tree_example          | ternary_tree.dot          | 
+| binary_tree_only_data_example | binary_tree_only_data.dot | 
 
 Chaque test se présente comme tel:
 - il définit une structure représentant un arbre
 - il définit des fonctions permettant au module d'utiliser la structure
 - il renseigne ces fonctions à une structure `TreeDisplayData`
-- il appel la fonction de display
+- il appelle la fonction `writef_tree`
+
 
 ## Compilation
-Ce projet fournis un makefile détaillé, pouvant être analysé et recopié pour les étudiants afin
-de comprendre l'utilisation d'un makefile.
+*Ce projet fournis un [Makefile](./Makefile) détaillé, pouvant être analysé et recopié pour les étudiants afin
+de comprendre l'utilisation d'un makefile générique.*
 
 
 Le projet peut être compilé via deux méthodes:
-- CMAKE:
+- CMAKE: (requis l'installation de CMAKE)
   - placez vous dans le dossier cmake-build-debug
-    > `$ cd cmake-build-debug`
+    > ```sh
+    > $ cd cmake-build-debug
+    > ```
   - compiler avec cmake:
-    > `$ cmake ..`
+    > ```sh
+    > $ cmake ..
+    > ```
 - Makefile
-    > `$ make clean & make`
+    > ```sh
+    > $ make clean & make
+    > ```
 
 ## Exécution
-
-./[C_DOT_TREE_VISUALIZER]
-
+```sh
+$ ./C_DOT_TREE_VISUALIZER
+```
 ### Contribution
 
 Les contributions sont les bienvenues ! Vous pouvez proposer des améliorations ou de nouveaux types d'arbres.
