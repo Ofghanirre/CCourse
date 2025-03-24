@@ -1,4 +1,4 @@
-﻿# C Courses repository
+﻿# CChrono Modulaire Non Bloquant
 
 Ce projet vise à implémenter une pseudo correction d'un exercice de Perfectionnement à la programmation en C, matière de 
 L2 de la licence Maths Info de l'université Gustave Eiffel.
@@ -29,16 +29,16 @@ Le projet peut être compilé via deux méthodes:
 - CMAKE: (requis l'installation de CMAKE)
     - placez vous dans le dossier cmake-build-debug
       > ```sh
-    > $ cd cmake-build-debug
-    > ```
+      > $ cd cmake-build-debug
+      > ```
     - compiler avec cmake:
       > ```sh
-    > $ cmake ..
-    > ```
+      > $ cmake ..
+      > ```
 - Makefile
   > ```sh
-    > $ make clean & make
-    > ```
+  > $ make clean & make
+  > ```
 
 ## Exécution
 ```sh
