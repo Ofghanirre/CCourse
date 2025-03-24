@@ -3,6 +3,13 @@
 # ./src/ contient les fichiers .c
 # ./inc/ contient les fichiers .h
 #
+# j'utilise l'argument de gcc -I pour spécifier le dossier contenant les ressources à inclure (ici mes headers)
+# cela me permet d'importer mes headers de modules de cette façon :
+# - #include <mon_module.h>
+# ce sera traduit plus tard en
+# - #include "./inc/mon_module.h"
+#
+# C'est très pratique pour vos projets modulaires.
 # ================================================================
 # VARIABLES
 # ================================================================
