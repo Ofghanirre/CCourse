@@ -5,7 +5,7 @@
 #ifndef TIME_H
 #define TIME_H
 #include <unistd.h>
-
+#include <stdbool.h>
 // == UTILS ==
 
 long get_milli_seconds(struct timeval tv);
